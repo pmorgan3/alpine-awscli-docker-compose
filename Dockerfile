@@ -1,9 +1,9 @@
 FROM alpine:3.6
-RUN apk -v --update add --no-cache \
-      py-pip \
-      python-dev \
+RUN apk -v --update add  \
       libffi-dev \
       openssl-dev \
+      python3 \
+      python3-dev \
       gcc \
       curl \ 
       libc-dev \
@@ -11,9 +11,6 @@ RUN apk -v --update add --no-cache \
       docker \
       git \
       && \
-    pip install --upgrade pip \ && \
-    pip install docker-compose && \
-    pip install awscli \
-    &&  chmod +x /usr/local/bin/docker-compose \ 
-
-
+    pip3 install -U pip  && \
+    pip3 install docker-compose && \
+    pip3 install awscli
