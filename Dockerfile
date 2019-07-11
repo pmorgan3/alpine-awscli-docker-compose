@@ -5,7 +5,7 @@ RUN apk -v --update add  \
       python3 \
       python3-dev \
       gcc \
-      open-ssh \
+      openssh \
       curl \ 
       libc-dev \
       make \
