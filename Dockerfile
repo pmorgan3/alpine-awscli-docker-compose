@@ -15,4 +15,5 @@ RUN apk -v --update add  \
     pip3 install -U pip  && \
     pip3 install docker-compose && \
     pip3 install awscli && \
-    curl -o /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest
+    curl -o /usr/local/bin/ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest && \
+    chmod +x /usr/local/bin/ecs-cli
